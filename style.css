@@ -6,8 +6,6 @@
 body {
     height: 100vh;
     margin: 0;
-
-
 }
 
 header {
@@ -16,9 +14,7 @@ header {
     padding-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-content: center;    
 }
 
 header .row1 {
@@ -26,16 +22,12 @@ header .row1 {
     justify-content: space-between;
     align-items: center;
     color: white;
-    width: 903px;
+    width: 900px;
 }
 
 header .row1 .column1 h1 {
     font-size: 24px;
     color: #F9FaF8;
-}
-
-header .row2 .column2 {
-    width: 451.5px;
 }
 
 header .row1 .column2 ul {
@@ -49,30 +41,21 @@ header .row1 .column2 ul li {
     font-size: 18px;
 }
 
-
 header .row2 {
+    width: 900px;
     display: flex;
-    justify-content: space-between;
     color: white;
-    width: 903px;
 }
 
 header .row2 .column1 {
-    width: 451.5px;
-}
-
-header .row2 .column1 h1 {
-    font-size: 48px;
-    font-weight: 1000;
+    flex: 1;
 }
 
 header .row2 .column1 p {
     font-size: 18px;
 }
 
-
-
-header .row2 .column1 .signup {
+header .row2 .column1 .signup_button {
     padding: 5px 15px;
     color: white;
     font-weight: bold;
@@ -81,12 +64,14 @@ header .row2 .column1 .signup {
     border-radius: 7px;
 }
 
-.img1 {
-    width: 451.5px;
+header .row2 .column2 {
+    flex: 1;
 }
 
-img {
-    width: 200px;
+header .row2 .column2 .img1 {
+    display: flex;
+    width: 450px;
+    flex: 1;
 }
 
 main {
@@ -96,20 +81,27 @@ main {
 }
 
 main nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 903px;
+    width: 900px;
 }
-
 
 main nav .row2 {
     display: flex;
     justify-content: space-between;
 }
 
-main .row2 > * {
+main nav .row2 > * {
     width: 200px;
+}
+
+.button {
+    text-decoration: none;
+    margin: 15px 40px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    background-color: #fc9400;
+    color: #fff;
 }
 
 .row2 .img1 .img1,
@@ -117,7 +109,7 @@ main .row2 > * {
 .row2 .img3 .img3,
 .row2 .img4 .img4 {
     margin: 0;
-    width: 170px;
+    width: 200px;
     border: 2px solid lightblue;
     border-radius: 10px;
 }
@@ -129,40 +121,43 @@ article {
 }
 
 article nav {
-    width: 903px;
-}
-
-
-.author .column2 {
+    width: 900px;
+    height: 200px;
     display: flex;
-    justify-content: flex-end;
-}
-
-.author .column2 p {
-    margin-right: 70px;
-    font-weight: 800;
+    flex-direction: column;
+    justify-content: center;
 }
 
 nav .text {
     margin-bottom: -40px;
 }
 
-nav .text .column1 p {
-    font-size: 36px;
+nav .text .row1 {
+    font-size: 28px;
     font-weight: 100;
 }
 
-nav .text .column2 {
-    font-size: 30px;
-    font-weight: 100;
+.author .row2 {
+    display: flex;
+    justify-content: flex-end;
 }
 
+.author .row2 {
+    margin-right: 70px;
+    font-weight: 800;
+}
+
+address {
+    display: flex;
+    justify-content: center;
+}
 
 address nav {
     background-color: #3882F6;
+    width: 1000px;
     margin: 80px;
     border-radius: 7px;
-    padding: 30px 140px;
+    padding: 30px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,15 +165,14 @@ address nav {
 
 address nav .row1 {
     color: white;
-
 }
 
-address nav .row1 > h3 {
+address nav .row1 h3 {
     margin-top: 0;
     font-weight: 100;
 }
 
-address nav .row1 > h1 {
+address nav .row1 h1 {
     margin-bottom: 0;
 }
 
@@ -190,7 +184,6 @@ address nav .row2 button {
     border-radius: 7px;
     font-size: 20px;
 }
-
 
 footer {
     background-color: #1F2937;
