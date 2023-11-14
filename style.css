@@ -68,7 +68,7 @@ header .row2 .column2 {
     flex: 1;
 }
 
-header .row2 .column2 .img1 {
+.img111 {
     display: flex;
     width: 450px;
     flex: 1;
